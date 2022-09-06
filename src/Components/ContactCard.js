@@ -8,7 +8,7 @@ const ContactCard = (props) => {
         className="ui avtar image"
         src={user}
         alt="user"
-        style={{ height: "50px", width: "50px" }}
+        style={{ height: "40px", width: "40px" }}
       />
       <div className="content">
         <div className="header">{name}</div>
