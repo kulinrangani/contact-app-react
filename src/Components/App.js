@@ -25,7 +25,9 @@ function App() {
 
   //storing the data in local storege of browser
   useEffect(() => {
-    localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(contacts));
+    if (contacts.length) {
+      localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(contacts));
+    }
   }, [contacts]);
 
   return (
