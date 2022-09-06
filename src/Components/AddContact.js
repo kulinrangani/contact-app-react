@@ -11,7 +11,8 @@ class AddContact extends Component {
       alert("Field can not be empty");
       return;
     }
-    console.log(this.state);
+    this.props.addContactHandler(this.state);
+    this.setState({ name: "", email: "" });
   };
   render() {
     return (
